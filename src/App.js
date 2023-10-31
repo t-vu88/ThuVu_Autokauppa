@@ -1,0 +1,22 @@
+import React from 'react';
+import './App.css';
+import Carlist from './components/Carlist.js'
+import AppBar from '@mui/material/AppBar';
+import Toolbar from '@mui/material/Toolbar';
+import Typography from '@mui/material/Typography';
+function App() {
+  return (
+    <div className="App">
+      <AppBar position="static" style = {{backgroundColor: "darkblue"}}>
+        <Toolbar> 
+          <Typography variant="h6">
+            Thu Vu Autokauppa
+          </Typography>
+        </Toolbar>
+      </AppBar>
+      <Carlist />
+    </div>
+  );
+}
+
+export default App;
